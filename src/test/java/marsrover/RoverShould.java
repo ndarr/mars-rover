@@ -8,13 +8,13 @@ class RoverShould {
     Rover rover;
 
     @Test
-    void start_at_position_0_0_N() {
+    void startAtPosition_0_0_N() {
         rover = new Rover();
         assertEquals("0:0:N", rover.execute(""));
     }
 
     @Test
-    void have_position_2_3_N_when_navigated_with_MMRMMLM() {
+    void havePosition_2_3_N_when_navigatedWith_MMRMMLM() {
         rover = new Rover();
         assertEquals("2:3:N", rover.execute("MMRMMLM"));
     }
